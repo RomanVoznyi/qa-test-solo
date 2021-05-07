@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @include font;
+  background-color: $grey-bg-color;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  border: none;
+  overflow: hidden;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 300px;
+  max-width: $tablet - 1;
+
+  @media screen and (min-width: $tablet) {
+    max-width: $desktop - 1;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: $max-width;
+  }
+}
+
+.section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 111px 20px 116px;
+  text-align: center;
+}

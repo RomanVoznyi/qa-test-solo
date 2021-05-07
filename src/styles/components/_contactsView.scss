@@ -1,0 +1,133 @@
+.contacts-box {
+  @extend .useful-box;
+  font-style: normal;
+  margin-bottom: 50px;
+}
+
+.contacts-title {
+  @extend .useful-title;
+}
+
+.contacts-list {
+  @extend .useful-list;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.contacts-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts-link {
+  position: relative;
+  @include flex(flex-start);
+  @include font(500, 14px, 1.2);
+  color: $black-color;
+
+  @include transition(color, stroke);
+
+  &:hover {
+    color: $accent-color;
+    stroke: $accent-color;
+  }
+}
+
+.icon-form {
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+}
+
+.social-list {
+  @include flex(flex-start);
+  padding-left: 10px;
+}
+
+.social-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $darkblue-bg-color;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  @include flex();
+  padding: 5px;
+  color: $white-color;
+}
+
+.icon-social {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+}
+
+.dev-box {
+  max-width: 320px;
+  margin-left: 170px;
+  text-align: left;
+}
+
+.dev-title {
+  position: relative;
+  @include flex(space-between);
+  margin-bottom: 30px;
+
+  @include font(500, 20px, 1.2);
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 320px;
+    height: 1px;
+
+    background-color: $line-color;
+  }
+}
+
+.openBtn {
+  width: 25px;
+  height: 25px;
+  transform: rotate(0);
+  @include transition(transform);
+
+  &.open {
+    transform: rotate(-180deg);
+  }
+}
+
+.dev-item {
+  @include flex(left);
+  padding: 10px;
+  border: 1px solid $line-color;
+  border-radius: 5px;
+  box-shadow: $popup-shadow;
+}
+
+.dev-photo {
+  width: 100px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: $google-btn-shadow;
+  margin-right: 20px;
+}
+
+.dev-name {
+  margin-bottom: 10px;
+}

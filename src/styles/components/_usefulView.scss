@@ -1,0 +1,97 @@
+.section.useful {
+  padding-top: 171px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-image: url(../../images/useful/useful_mob.jpg);
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../../images/useful/useful_mob@2x.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+    background-image: url(../../images/useful/useful_mob@3x.jpg);
+  }
+
+  @media screen and (min-width: $tablet - 1) {
+    background-image: url(../../images/useful/useful_tab.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../../images/useful/useful_tab@2x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url(../../images/useful/useful_tab@3x.jpg);
+    }
+  }
+
+  @media screen and (min-width: $desktop - 1) {
+    background-image: url(../../images/useful/useful_desk.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../../images/useful/useful_desk@2x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url(../../images/useful/useful_desk@3x.jpg);
+    }
+  }
+}
+
+.useful-box {
+  max-width: 320px;
+  margin-left: 170px;
+  margin-bottom: 30px;
+  text-align: left;
+
+  &:last-child {
+    margin-bottom: 260px;
+  }
+}
+
+.useful-title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 45px;
+
+  @include font(700, 22px, 1.36);
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -22px;
+    width: 320px;
+    height: 1px;
+
+    background-color: $line-color;
+  }
+}
+
+.useful-list {
+  @include font(500, 14px, 1.57);
+  padding-left: 50px;
+}
+
+.useful-item {
+  list-style: decimal;
+}
+
+.useful-link {
+  color: $black-color;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}

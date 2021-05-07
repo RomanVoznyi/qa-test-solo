@@ -1,0 +1,20 @@
+.userbox {
+  @include flex(right);
+  margin-right: 20px;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  @include flex();
+  margin-right: 35px;
+  overflow: hidden;
+
+  box-shadow: $avatar-shadow;
+}
+
+.icon-exit {
+  width: 20px;
+  height: 20px;
+}

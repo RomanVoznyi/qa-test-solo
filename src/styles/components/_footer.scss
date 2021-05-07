@@ -1,0 +1,51 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  @include flex();
+  width: 100%;
+  padding: 20px;
+  z-index: 2;
+
+  @include font(400, 12px, 1.25, 0.03em);
+  text-align: center;
+
+  color: $footer-text-color;
+  background-color: $darkblue-bg-color;
+}
+
+.icon-copyright {
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.icon-heart {
+  margin-left: 5px;
+  margin-right: 5px;
+  fill: $accent-color;
+
+  animation-name: beat;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.6);
+  }
+}
+
+.limiter {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.footer > span > .devLink {
+  margin-left: 5px;
+  font: inherit;
+  color: inherit;
+  text-decoration: underline;
+}

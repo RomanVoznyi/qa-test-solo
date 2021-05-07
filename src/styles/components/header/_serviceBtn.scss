@@ -1,0 +1,21 @@
+.serviceBtn {
+  width: 56px;
+  @include flex;
+  padding: 25px 20px;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-left: 1px solid $border-color;
+  cursor: pointer;
+
+  @include transition(background-color);
+}
+
+.serviceBtn:hover {
+  background-color: $hover-color;
+}
+
+.serviceBtn.active {
+  background-color: $focus-color;
+  border-color: $black-color;
+}

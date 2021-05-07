@@ -1,0 +1,23 @@
+@import './authForm';
+@import './registerForm';
+
+.section.auth {
+  @include flex();
+  padding: 170px 125px 156px;
+}
+
+.auth-box {
+  width: 505px;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.auth-title {
+  margin-bottom: 20px;
+  @include font(800, 34px, 1.21);
+}
+
+.auth-desription {
+  width: 420px;
+  @include font(500, 18px, 2);
+}

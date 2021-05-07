@@ -1,0 +1,80 @@
+.test-form {
+  width: 820px;
+  min-height: 450px;
+  margin: 0 auto 20px;
+  padding: 50px 85px 60px;
+
+  background-color: $white-color;
+  box-shadow: $popup-shadow;
+}
+
+.question-counter {
+  margin-bottom: 5px;
+  @include font(400, 14px, 1.22);
+  color: $grey-color;
+}
+
+.currentQuestion {
+  font-weight: 700;
+  font-size: 16px;
+  color: $accent-color;
+}
+
+.question {
+  position: relative;
+  display: inline-block;
+  @include font(700, 22px, 1.36);
+  margin-bottom: 60px;
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 1px;
+
+    background-color: $line-color;
+  }
+}
+
+.question-item {
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  &:last-child {
+    margin-top: 35px;
+  }
+}
+
+.question-box {
+  position: relative;
+  @include flex(flex-start, center);
+  @include font(500, 16px, 1.25);
+  text-align: left;
+}
+
+.radioBtn {
+  @extend .visually-hidden;
+}
+
+.ownRadioBtn {
+  @include flex();
+  min-width: 18px;
+  width: 18px;
+  height: 18px;
+  margin-right: 20px;
+
+  border-radius: 50%;
+  border: 1px solid $black-color;
+
+  .radioBtn:checked + & > span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+    background-color: $accent-color;
+  }
+}

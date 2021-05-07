@@ -1,0 +1,18 @@
+@import './utils/variables';
+@import './utils/breakpoints';
+@import './utils/mixins';
+@import './base/general';
+@import './components/app';
+@import './components/header/header';
+@import './components/footer';
+@import './components/homeView';
+@import './components/authView/authView';
+@import './components/testView/testView';
+@import './components/resultView';
+@import './components/usefulView';
+@import './components/contactsView';
+@import './components/loader';
+
+// * {
+//   outline: 1px solid tomato;
+// }

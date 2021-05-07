@@ -1,0 +1,55 @@
+.auth-form {
+  width: 505px;
+  padding: 60px 40px 42px;
+  @include font(500, 14px, 1.21);
+  text-align: left;
+
+  background-color: $white-color;
+  box-shadow: $popup-shadow;
+}
+
+.form-options {
+  margin-bottom: 30px;
+}
+
+.googleBtn {
+  width: 160px;
+  height: 50px;
+  @include flex();
+  padding: 17px;
+  margin-bottom: 40px;
+
+  background-color: $google-btn-color;
+  box-shadow: $google-btn-shadow;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.googleBtn-title {
+  margin-left: 10px;
+  @include font(700, 14px, 1.21);
+}
+
+.authBtn {
+  width: 202px;
+  height: 60px;
+  padding: 23px;
+
+  @include font(700, 12px, 1.25);
+  text-transform: uppercase;
+
+  background-color: transparent;
+  outline: none;
+  border: 1px solid $input-border-color;
+  cursor: pointer;
+
+  &.active {
+    color: $white-color;
+    background-color: $accent-color;
+  }
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}

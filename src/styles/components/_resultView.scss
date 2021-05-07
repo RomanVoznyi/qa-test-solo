@@ -1,0 +1,66 @@
+.result-title {
+  margin-bottom: 10px;
+
+  @include font(700, 22px, 1.36);
+}
+
+.result-testName {
+  position: relative;
+  margin-bottom: 70px;
+  @include font(500, 14px, 1.22);
+  text-transform: uppercase;
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 1px;
+
+    background-color: $line-color;
+  }
+}
+
+.chartWrapper {
+  margin: 0 auto 30px;
+  transform: translateX(20%);
+  text-align: center;
+  width: 500px;
+  height: 285px;
+}
+
+.total-results {
+  margin-bottom: 30px;
+  @include font(500, 16px, 1.25);
+
+  & > span:not(:last-child) {
+    padding-right: 20px;
+    margin-right: 20px;
+    border-right: 1px solid $line-color;
+  }
+}
+
+.result-numbers {
+  font-weight: 700;
+}
+
+.icon-cat {
+  margin-bottom: 10px;
+}
+
+.result-resume {
+  margin-bottom: 10px;
+  @include font(700, 22px, 1.36);
+}
+
+.result-recomendation {
+  margin-bottom: 45px;
+  @include font(500, 20px, 1.2);
+}
+
+.tryAgainBtn {
+  @extend .finishBtn;
+  display: inline-block;
+}

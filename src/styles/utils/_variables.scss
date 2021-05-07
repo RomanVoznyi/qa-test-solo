@@ -1,0 +1,37 @@
+// Палитра
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+$basic-font: 'Montserrat', sans-serif;
+
+// Colors
+$accent-color: #ff6b09;
+
+$white-color: #ffffff;
+$black-color: #000000;
+$grey-color: #555555;
+$footer-text-color: rgba(255, 255, 255, 0.4);
+$border-color: #e2e3e5;
+$input-text-color: #bbbbbb;
+$input-border-color: #ced2d1;
+$line-color: rgba(0, 18, 47, 0.15);
+$hover-color: rgba(0, 0, 0, 0.1);
+$focus-color: rgba(0, 0, 0, 0.2);
+
+//Back-ground colors
+$grey-bg-color: #f5f6fb;
+$darkblue-bg-color: #02172a;
+$darkblue-bg-color-05: rgba(2, 23, 42, 0.5);
+$google-btn-color: #fafafa;
+$logo-fill-color: #121d2e;
+$result-grey-bg-color: #d7d7d7;
+
+//Shadows
+$popup-shadow: 0px 4px 15px rgba(2, 23, 42, 0.1);
+$buttons-shadow: 0px 4px 15px rgba(18, 29, 46, 0.15);
+$avatar-shadow: 0px 1px 1px rgba(18, 29, 46, 0.1);
+$google-btn-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+
+// Timing
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);

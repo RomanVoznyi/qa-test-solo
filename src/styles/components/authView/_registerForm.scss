@@ -1,0 +1,39 @@
+.input-box {
+  position: relative;
+  display: block;
+  @include font(500, 14px, 1.21);
+  color: $input-text-color;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.auth-input {
+  display: block;
+  width: 100%;
+  padding: 20px 25px;
+  border: 1px solid $input-border-color;
+  outline: none;
+}
+
+.auth-label {
+  position: absolute;
+  left: 26px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: $white-color;
+  padding-left: 5px;
+  padding-right: 5px;
+  @include transition(top, background-color);
+
+  .auth-input:focus ~ &,
+  .auth-input:not(:placeholder-shown) ~ & {
+    top: 0%;
+    background-color: $white-color;
+  }
+}
+
+.input-list {
+  margin-bottom: 40px;
+}

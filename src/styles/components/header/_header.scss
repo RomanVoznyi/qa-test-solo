@@ -1,0 +1,24 @@
+@import './navigate';
+@import './userData';
+@import './serviceBtn';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  @include flex(left);
+  width: 100vw;
+  background-color: $grey-bg-color;
+  border-bottom: 1px solid $border-color;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 20px;
+  @include flex(left);
+}
+
+.icon-logo {
+  margin-right: 20px;
+}

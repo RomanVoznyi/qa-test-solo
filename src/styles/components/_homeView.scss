@@ -1,0 +1,61 @@
+.quote {
+  position: relative;
+  display: inline-block;
+  max-width: 650px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+
+  @include font(700, 22px, 1.36);
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 1px;
+
+    background-color: $line-color;
+  }
+}
+
+.author-box {
+  margin-bottom: 84px;
+}
+
+.author {
+  @include font(500, 18px, 2);
+}
+
+.author-data {
+  @include font(400, 14px, 2.57);
+}
+
+.buttons-box {
+  margin-bottom: 114px;
+}
+
+.chooseTestBtn {
+  display: inline-block;
+  width: 400px;
+  max-width: 400px;
+  height: 212px;
+  padding: 60px 12px 42px;
+
+  box-shadow: $buttons-shadow;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  @include font(800, 32px, 1.22);
+  color: $white-color;
+
+  &.tech {
+    background-color: $darkblue-bg-color;
+    margin-right: 20px;
+  }
+
+  &.theory {
+    background-color: $accent-color;
+  }
+}
